@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Zapato Didáctico</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header (coherente con el diseño) -->
+    <header class="header">
+        <div class="container header-flex">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="Logo Zapato Didáctico" class="header-logo">
+            </a>
+            
+            <!-- Ejemplo para index.html y demás -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Sobre Nosotros</a></li>
+                    <li><a href="materials.html">Materiales</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" aria-label="Menú móvil">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section para Contacto -->
+    <section class="hero hero-contact">
+        <div class="container">
+            <div class="hero-content">
+                <h1>¿Necesitas ayuda?</h1>
+                <p class="subtitle">Escríbenos y te responderemos en menos de 24 horas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section class="contact-form">
+        <div class="container">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Asunto</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="consulta">Consulta general</option>
+                        <option value="pedido">Pedido de materiales</option>
+                        <option value="soporte">Soporte técnico</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    <span id="submit-text">Enviar mensaje</span>
+                    <div id="loading-spinner" class="loading-spinner"></div>
+                </button>
+
+                <div id="form-success" class="success-message">
+                    <i class="fas fa-check-circle"></i>
+                    <p>¡Mensaje enviado! Te responderemos pronto.</p>
+                </div>
+            </form>
+
+            <div class="contact-info">
+                <h2>Otras formas de contacto</h2>
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <p>hola@zapatodidactico.com</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <p>+123 456 789</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Calle Educativa 123, Ciudad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (igual al index) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand">
+                <img src="assets/images/logo-white.png" alt="Logo Zapato Didáctico" class="footer-logo">
+                <p>Innovando en educación desde 2023</p>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Sobre Nosotros</a></li>
+                    <li><a href="materials.html">Materiales</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> hola@zapatodidactico.com</li>
+                    <li><i class="fas fa-phone"></i> +123 456 789</li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Zapato Didáctico. Todos los derechos reservados.</p>
+            <p>Creado con ♥ para educadores</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/contact.js"></script>
+</body>
+</html>
