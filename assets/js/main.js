@@ -4,11 +4,14 @@ document.addEventListener('DOMContentLoaded', async function() {
     const navbar = document.querySelector('.navbar');
     if (menuToggle && navbar) {
         menuToggle.addEventListener('click', function() {
+            const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', !expanded);
             navbar.classList.toggle('active');
         });
         navbar.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 navbar.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
             });
         });
     }
