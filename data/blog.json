@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "title": "Cómo sobrevivir a una clase de primaria",
+        "category": "Consejos Pedagógicos",
+        "date": "20/01/2024",
+        "image": "assets/images/blog-1.jpg",
+        "excerpt": "Crónica honesta de un día en el aula con estrategias reales...",
+        "content": "<p>Este es el <strong>contenido completo</strong> del artículo con HTML:</p><ul><li>Técnica 1: Respiración profunda</li><li>Técnica 2: Juegos relámpago</li></ul><img src='assets/images/ejemplo.jpg' alt='Aula'>",
+        "author": "El Pedagogo Pedante",
+        "is_featured": true
+    },
+    {
+        "id": 2,
+        "title": "¡Sin Palabras! en acción",
+        "category": "Gamificación",
+        "date": "15/01/2024",
+        "image": "assets/images/blog-2.jpg",
+        "excerpt": "Cómo una docente transformó su clase con nuestro juego...",
+        "content": "<p>Casos de estudio y <em>resultados</em> observados...</p>",
+        "author": "El Pedagogo Pedante",
+        "is_featured": false
+    }
+]
